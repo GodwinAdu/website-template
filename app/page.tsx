@@ -332,7 +332,7 @@ export default function CreditUnionWebsite() {
               </div>
               <div>
                 <h1
-                  className={`text-xl lg:text-2xl font-bold ${isDarkMode ? "text-white" : "text-blue-900"} transition-colors`}
+                  className={`text-sm lg:text-lg font-bold ${isDarkMode ? "text-white" : "text-blue-900"} transition-colors`}
                 >
                   Good News
                 </h1>
@@ -343,12 +343,12 @@ export default function CreditUnionWebsite() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-3">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`${isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"} font-medium transition-all duration-300 relative group px-2 py-1`}
+                  className={`${isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"} font-medium transition-all duration-300 relative group px-2 text-sm py-1`}
                 >
                   {item.name}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
