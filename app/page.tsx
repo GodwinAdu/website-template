@@ -46,6 +46,7 @@ import {
   Briefcase,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CreditUnionWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -694,7 +695,7 @@ export default function CreditUnionWebsite() {
             <p
               className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} max-w-4xl mx-auto leading-relaxed`}
             >
-              Discover how we're making a difference in our community through innovative programs, partnerships, and
+              Discover how we&apos;re making a difference in our community through innovative programs, partnerships, and
               member success stories.
             </p>
           </div>
@@ -706,10 +707,12 @@ export default function CreditUnionWebsite() {
             >
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={galleryItems[currentGalleryIndex].image || "/placeholder.svg"}
                     alt={galleryItems[currentGalleryIndex].title}
                     className="w-full h-96 lg:h-full object-cover transition-transform duration-700 hover:scale-110"
+                    height={100}
+                    width={100}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <Badge className="absolute top-6 left-6 bg-blue-600 text-white px-4 py-2 font-semibold">
@@ -788,10 +791,12 @@ export default function CreditUnionWebsite() {
                 onClick={() => setCurrentGalleryIndex(index)}
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={item.image || "/placeholder.svg"}
                     alt={item.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    height={100}
+                    width={100}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <Badge className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 text-xs font-semibold">
@@ -856,10 +861,12 @@ export default function CreditUnionWebsite() {
                 className={`group hover:shadow-2xl transition-all duration-700 hover:-translate-y-4 border-0 shadow-lg overflow-hidden ${isDarkMode ? "bg-gray-800/50 backdrop-blur-sm" : "bg-white/50 backdrop-blur-sm"} hover:scale-105 relative`}
               >
                 <div className="relative overflow-hidden">
-                  <img
+                  <Image
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
                     className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                    height={100}
+                    width={100}
                   />
                   <div
                     className={`absolute inset-0 bg-gradient-to-t ${member.gradient} opacity-0 group-hover:opacity-80 transition-opacity duration-500`}
@@ -1027,7 +1034,7 @@ export default function CreditUnionWebsite() {
                 </h2>
                 <p className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} leading-relaxed mb-8`}>
                   For over 35 years, Good News Co-op Credit Union has been a cornerstone of financial stability and
-                  community growth. We're not just your financial institution – we're your neighbors, your partners in
+                  community growth. We're not just your financial institution – we&apos;re your neighbors, your partners in
                   success, and your advocates for financial wellness.
                 </p>
               </div>
@@ -1322,7 +1329,7 @@ export default function CreditUnionWebsite() {
               className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} max-w-4xl mx-auto leading-relaxed`}
             >
               Visit us at any of our 15 modern branch locations or bank online 24/7 with our award-winning digital
-              platform. We're here when you need us.
+              platform. We&apos;re here when you need us.
             </p>
           </div>
 
