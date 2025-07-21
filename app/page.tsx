@@ -316,100 +316,6 @@ export default function CreditUnionWebsite() {
         <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
-      {/* Header */}
-      <header
-        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-          isScrolled
-            ? `${isDarkMode ? "bg-gray-900/95" : "bg-white/95"} backdrop-blur-xl shadow-2xl border-b ${isDarkMode ? "border-gray-800" : "border-white/20"}`
-            : "bg-transparent"
-        }`}
-      >
-        <div className="container mx-auto px-4 lg:px-6">
-          <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
-            <div className="flex items-center space-x-3 relative z-10">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                <Shield className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <h1
-                  className={`text-sm lg:text-lg font-bold ${isDarkMode ? "text-white" : "text-blue-900"} transition-colors`}
-                >
-                  Good News
-                </h1>
-                <p className={`text-xs ${isDarkMode ? "text-blue-400" : "text-blue-600"} -mt-1 transition-colors`}>
-                  Co-op Credit Union
-                </p>
-              </div>
-            </div>
-
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-3">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`${isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"} font-medium transition-all duration-300 relative group px-2 text-sm py-1`}
-                >
-                  {item.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-                </Link>
-              ))}
-
-              <button
-                onClick={() => setIsDarkMode(!isDarkMode)}
-                className={`p-2 rounded-full ${isDarkMode ? "bg-gray-800 text-yellow-400" : "bg-gray-100 text-gray-600"} hover:scale-110 transition-all duration-300`}
-              >
-                {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </button>
-
-              <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-blue-500/25">
-                Join Today
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`lg:hidden p-3 rounded-xl ${isDarkMode ? "hover:bg-gray-800" : "hover:bg-gray-100"} transition-all duration-300`}
-            >
-              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <div
-              className={`lg:hidden absolute top-full left-0 w-full ${isDarkMode ? "bg-gray-900/95" : "bg-white/95"} backdrop-blur-xl shadow-2xl border-t ${isDarkMode ? "border-gray-800" : "border-white/20"} animate-in slide-in-from-top-2 duration-300`}
-            >
-              <nav className="flex flex-col p-6 space-y-4">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className={`${isDarkMode ? "text-gray-300 hover:text-blue-400" : "text-gray-700 hover:text-blue-600"} font-medium py-3 transition-all duration-300 border-b ${isDarkMode ? "border-gray-800" : "border-gray-100"} last:border-b-0`}
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-                <div className="flex items-center justify-between pt-4">
-                  <button
-                    onClick={() => setIsDarkMode(!isDarkMode)}
-                    className={`p-3 rounded-full ${isDarkMode ? "bg-gray-800 text-yellow-400" : "bg-gray-100 text-gray-600"} transition-all duration-300`}
-                  >
-                    {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-                  </button>
-                  <Button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white flex-1 ml-4">
-                    Join Today
-                  </Button>
-                </div>
-              </nav>
-            </div>
-          )}
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section ref={heroRef} className="pt-20 lg:pt-32 pb-16 lg:pb-24 relative overflow-hidden">
@@ -1033,9 +939,7 @@ export default function CreditUnionWebsite() {
                   </span>
                 </h2>
                 <p className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} leading-relaxed mb-8`}>
-                  For over 35 years, Good News Co-op Credit Union has been a cornerstone of financial stability and
-                  community growth. We're not just your financial institution – we&apos;re your neighbors, your partners in
-                  success, and your advocates for financial wellness.
+                  Good news co-operative credit union was formed through an initiative of Regina Hemans Asmah, now known as Rev. Regina Turkson.
                 </p>
               </div>
 
@@ -1213,10 +1117,7 @@ export default function CreditUnionWebsite() {
                 </div>
                 <CardTitle className="text-3xl font-bold text-white mb-6">Our Mission</CardTitle>
                 <CardDescription className="text-blue-100 text-lg leading-relaxed">
-                  To empower our members and strengthen our community by providing exceptional financial services,
-                  fostering financial literacy, and building lasting relationships based on trust, integrity, and mutual
-                  success. We leverage cutting-edge technology to deliver personalized banking experiences that adapt to
-                  your evolving needs.
+                  To facilitate the socio-economic development for its members, through provision of innovative member-centered financial and non-financial products and services to object poverty members and economically active members using a team of dedicated and reliable staff.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -1238,9 +1139,7 @@ export default function CreditUnionWebsite() {
                 <CardDescription
                   className={`${isDarkMode ? "text-gray-300" : "text-gray-600"} text-lg leading-relaxed`}
                 >
-                  To be the leading credit union in our region, recognized for innovation, member satisfaction, and
-                  community impact. We envision a future where every member achieves their financial dreams through our
-                  AI-powered insights, sustainable practices, and unwavering commitment to their success.
+                  To become the best choice credit union for reliability, integrity, efficient thrift and loan services.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -1649,113 +1548,6 @@ export default function CreditUnionWebsite() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className={`${isDarkMode ? "bg-gray-900" : "bg-gray-900"} text-white py-20 relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20"></div>
-        <div className="container mx-auto px-4 lg:px-6 relative">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg">
-                  <Shield className="w-7 h-7 text-white" />
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold">Good News</h3>
-                  <p className="text-sm text-gray-400">Co-op Credit Union</p>
-                </div>
-              </div>
-              <p className="text-gray-400 leading-relaxed">
-                Your trusted financial partner since 1985. Member-owned, community-focused, and technology-driven for
-                the modern world.
-              </p>
-              <div className="flex space-x-4">
-                {[
-                  { icon: <Globe className="w-5 h-5" />, label: "Website" },
-                  { icon: <Smartphone className="w-5 h-5" />, label: "Mobile App" },
-                  { icon: <Mail className="w-5 h-5" />, label: "Email" },
-                ].map((social, index) => (
-                  <button
-                    key={index}
-                    className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  >
-                    {social.icon}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-bold mb-6">Quick Links</h4>
-              <ul className="space-y-3">
-                {navItems.slice(0, 4).map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300 flex items-center group"
-                    >
-                      <ChevronRight className="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-bold mb-6">Services</h4>
-              <ul className="space-y-3 text-gray-400">
-                <li className="hover:text-white transition-colors cursor-pointer">Personal Banking</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Business Banking</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Loans & Credit</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Investment Services</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Mobile Banking</li>
-                <li className="hover:text-white transition-colors cursor-pointer">Financial Planning</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-bold mb-6">Contact Info</h4>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <span className="text-gray-400">(555) 123-GOOD</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                  <span className="text-gray-400">info@goodnewscu.org</span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-1" />
-                  <div className="text-gray-400">
-                    <p>123 Main Street</p>
-                    <p>Downtown, ST 12345</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {new Date().getFullYear()} Good News Co-op Credit Union. All rights reserved.
-            </p>
-            <div className="flex space-x-8">
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                NCUA Insured
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Equal Housing Lender
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
 
       {/* Floating Action Button */}
       <div className="fixed bottom-8 right-8 z-50">
