@@ -44,6 +44,8 @@ import {
   Facebook,
   GraduationCap,
   Briefcase,
+  BanknoteArrowDown,
+  CloudRainWind,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
@@ -137,14 +139,14 @@ export default function CreditUnionWebsite() {
 
   const teamMembers = [
     {
-      name: "Sarah Mitchell",
-      position: "Chief Executive Officer",
-      department: "Executive Leadership",
-      image: "/placeholder.svg?height=400&width=400",
+      name: "Rev. Regina Turkson",
+      position: "General Manager",
+      department: "Executive Management",
+      image: "/img/team/gm.jpg",
       experience: "15+ Years",
-      education: "MBA Finance, Harvard Business School",
-      specialties: ["Strategic Planning", "Community Development", "Financial Leadership"],
-      bio: "Sarah has been leading Good News Co-op Credit Union with vision and integrity, focusing on member-centric innovation and community growth.",
+      education: "MBA, Harvard Business School",
+      specialties: ["Leadership", "Strategic Planning", "Community Engagement"],
+      bio: "Rev. Regina Turkson has been leading Good News Co-op Credit Union with vision and integrity, focusing on member-centric innovation and community growth.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -153,14 +155,14 @@ export default function CreditUnionWebsite() {
       gradient: "from-blue-500 to-cyan-600",
     },
     {
-      name: "Michael Rodriguez",
-      position: "Chief Financial Officer",
-      department: "Finance & Operations",
-      image: "/placeholder.svg?height=400&width=400",
+      name: "Miss Stella Amoquadoh",
+      position: "Head of Operations",
+      department: "Operations",
+      image: "/img/team/ho new.jpg",
       experience: "12+ Years",
       education: "CPA, MS Accounting",
       specialties: ["Risk Management", "Financial Analysis", "Regulatory Compliance"],
-      bio: "Michael ensures our financial stability and growth while maintaining the highest standards of fiscal responsibility and transparency.",
+      bio: "Miss Stella Amoquadoh ensures our financial stability and growth while maintaining the highest standards of fiscal responsibility and transparency.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -169,14 +171,14 @@ export default function CreditUnionWebsite() {
       gradient: "from-purple-500 to-pink-600",
     },
     {
-      name: "Jennifer Chen",
-      position: "VP of Technology",
-      department: "Information Technology",
-      image: "/placeholder.svg?height=400&width=400",
+      name: "Mr. Joseph Paapa Koomson-Biney",
+      position: "Head of Supervisory Committee",
+      department: "Supervisory Committee",
+      image: "/img/team/hoo.jpg",
       experience: "10+ Years",
       education: "MS Computer Science, Stanford",
-      specialties: ["Digital Innovation", "Cybersecurity", "Mobile Banking"],
-      bio: "Jennifer drives our digital transformation, ensuring we stay at the forefront of banking technology while maintaining security.",
+      specialties: ["Digital Transformation", "Cybersecurity", "Data Analytics"],
+      bio: "Mr. Joseph Paapa Koomson-Biney drives our digital transformation, ensuring we stay at the forefront of banking technology while maintaining security.",
       social: {
         linkedin: "#",
         twitter: "#",
@@ -185,53 +187,53 @@ export default function CreditUnionWebsite() {
       gradient: "from-green-500 to-emerald-600",
     },
     {
-      name: "David Thompson",
-      position: "VP of Lending",
-      department: "Loan Services",
-      image: "/placeholder.svg?height=400&width=400",
+      name: "Bennet Quayson",
+      position: "Head of Management Team",
+      department: "Management Team",
+      image: "/img/team/abeiku.jpg",
       experience: "14+ Years",
-      education: "MBA, Certified Lending Professional",
-      specialties: ["Mortgage Lending", "Credit Analysis", "Risk Assessment"],
-      bio: "David leads our lending team with expertise in helping members achieve their dreams through responsible lending practices.",
+      education: "BSc Finance, University of Ghana",
+      specialties: ["Loan Origination", "Risk Assessment", "Financial Planning"],
+      bio: "Bennet leads our management team with expertise in helping members achieve their dreams through responsible lending practices.",
       social: {
         linkedin: "#",
         facebook: "#",
       },
       gradient: "from-orange-500 to-red-600",
     },
-    {
-      name: "Lisa Park",
-      position: "VP of Member Services",
-      department: "Member Experience",
-      image: "/placeholder.svg?height=400&width=400",
-      experience: "11+ Years",
-      education: "BA Business Administration",
-      specialties: ["Customer Experience", "Service Excellence", "Member Relations"],
-      bio: "Lisa ensures every member receives exceptional service and support throughout their financial journey with us.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        instagram: "#",
-        facebook: "#",
-      },
-      gradient: "from-teal-500 to-blue-600",
-    },
-    {
-      name: "Robert Kim",
-      position: "Chief Marketing Officer",
-      department: "Marketing & Communications",
-      image: "/placeholder.svg?height=400&width=400",
-      experience: "9+ Years",
-      education: "MBA Marketing, Northwestern Kellogg",
-      specialties: ["Brand Strategy", "Digital Marketing", "Community Outreach"],
-      bio: "Robert crafts our brand story and ensures our message of financial empowerment reaches every corner of our community.",
-      social: {
-        linkedin: "#",
-        twitter: "#",
-        instagram: "#",
-      },
-      gradient: "from-indigo-500 to-purple-600",
-    },
+    // {
+    //   name: "Lisa Park",
+    //   position: "VP of Member Services",
+    //   department: "Member Experience",
+    //   image: "/placeholder.svg?height=400&width=400",
+    //   experience: "11+ Years",
+    //   education: "BA Business Administration",
+    //   specialties: ["Customer Experience", "Service Excellence", "Member Relations"],
+    //   bio: "Lisa ensures every member receives exceptional service and support throughout their financial journey with us.",
+    //   social: {
+    //     linkedin: "#",
+    //     twitter: "#",
+    //     instagram: "#",
+    //     facebook: "#",
+    //   },
+    //   gradient: "from-teal-500 to-blue-600",
+    // },
+    // {
+    //   name: "Robert Kim",
+    //   position: "Chief Marketing Officer",
+    //   department: "Marketing & Communications",
+    //   image: "/placeholder.svg?height=400&width=400",
+    //   experience: "9+ Years",
+    //   education: "MBA Marketing, Northwestern Kellogg",
+    //   specialties: ["Brand Strategy", "Digital Marketing", "Community Outreach"],
+    //   bio: "Robert crafts our brand story and ensures our message of financial empowerment reaches every corner of our community.",
+    //   social: {
+    //     linkedin: "#",
+    //     twitter: "#",
+    //     instagram: "#",
+    //   },
+    //   gradient: "from-indigo-500 to-purple-600",
+    // },
   ]
 
   const advisoryBoard = [
@@ -398,7 +400,7 @@ export default function CreditUnionWebsite() {
             </div>
 
             <div className="relative animate-in slide-in-from-right duration-1000 delay-300">
-              <div className="relative">
+              <div className="relative top-[-10rem] hidden md:block ">
                 {/* Floating Cards */}
                 <div className="absolute inset-0 space-y-4">
                   <div
@@ -483,8 +485,7 @@ export default function CreditUnionWebsite() {
             <p
               className={`text-xl ${isDarkMode ? "text-gray-300" : "text-gray-600"} max-w-4xl mx-auto leading-relaxed`}
             >
-              From everyday banking to major life purchases, we have the products and services to help you achieve your
-              financial goals with cutting-edge technology and personalized service.
+              Discover a range of financial products tailored to meet your unique needs and goals.
             </p>
           </div>
 
@@ -492,44 +493,44 @@ export default function CreditUnionWebsite() {
             {[
               {
                 icon: <Home className="w-8 h-8" />,
-                title: "Smart Home Loans",
-                description: "AI-powered loan matching with competitive rates and flexible terms",
-                features: ["Instant pre-approval", "Digital closing", "Rate protection"],
+                title: "Members Deposit",
+                description: "This is an investment package from the union which can be done for 3 months, 6 months or 12 months.",
+                features: ["Instant pre-approval", "Rate protection"],
                 gradient: "from-green-500 to-emerald-600",
               },
               {
-                icon: <Car className="w-8 h-8" />,
-                title: "Auto Financing",
-                description: "Drive away with confidence using our streamlined auto financing",
-                features: ["Same-day approval", "New & used vehicles", "Refinancing options"],
+                icon: <BanknoteArrowDown className="w-8 h-8" />,
+                title: "Grassroot Susu",
+                description: "With an initial amount as low as GHc 5.00, you can open a Grassroot Susu account and can also contribute daily through a sales executive who comes around daily for your contributions or monies.",
+                features: ["Same-day approval"],
                 gradient: "from-blue-500 to-cyan-600",
               },
               {
                 icon: <PiggyBank className="w-8 h-8" />,
-                title: "High-Yield Savings",
-                description: "Maximize your savings with our premium interest rates",
+                title: "Savings",
+                description: "This savings package does not attract any deductions when withdrawing and can be used to save up for your investments.",
                 features: ["4.5% APY", "No monthly fees", "Mobile banking"],
                 gradient: "from-purple-500 to-pink-600",
               },
               {
-                icon: <CreditCard className="w-8 h-8" />,
-                title: "Rewards Credit Cards",
-                description: "Earn more with every purchase using our premium cards",
-                features: ["5% cashback", "No annual fee", "Travel rewards"],
+                icon: <CloudRainWind className="w-8 h-8" />,
+                title: "Me Nhyira Nti",
+                description: "This product was also designed for religious thanksgiving. As religious as we are, we always find it difficult to contribute towards our annual thanksgiving because of lack of savings towards the event. But this product is here to help the customers to contribute towards the annual thanksgiving.",
+                features: ["cashback", "No annual fee"],
                 gradient: "from-orange-500 to-red-600",
               },
               {
                 icon: <Calculator className="w-8 h-8" />,
-                title: "Personal Loans",
-                description: "Flexible financing for life's opportunities and challenges",
-                features: ["Instant decisions", "Competitive rates", "No prepayment penalty"],
+                title: "Traditional Susu",
+                description: "Traditional Susu product is designed to match up with the local way of olden susu collections where after a month, you redeem your savings and start again from the following month",
+                features: ["No interest", "Flexible contributions"],
                 gradient: "from-teal-500 to-blue-600",
               },
               {
                 icon: <TrendingUp className="w-8 h-8" />,
-                title: "Investment Services",
-                description: "Build wealth with our AI-driven investment platform",
-                features: ["Robo-advisor", "Portfolio management", "Retirement planning"],
+                title: "Me Mma Nti",
+                description: "This product was designed for parents who have children or yet to have children. This product encourages the parent to save for the kids future and also the amount can serve as collateral for loans.",
+                features: ["Flexible terms", "No hidden fees"],
                 gradient: "from-indigo-500 to-purple-600",
               },
             ].map((product, index) => (
@@ -1345,7 +1346,7 @@ export default function CreditUnionWebsite() {
               Contact Us
             </Badge>
             <h2 className={`text-4xl lg:text-6xl font-bold ${isDarkMode ? "text-white" : "text-gray-900"} mb-8`}>
-              Let's Start Your
+              Let&apos;s Start Your
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent block">
                 Financial Journey
               </span>
@@ -1365,14 +1366,18 @@ export default function CreditUnionWebsite() {
                   {
                     icon: <Phone className="w-8 h-8" />,
                     title: "Call Us",
-                    description: "(555) 123-GOOD",
+                    description: `
+                    +233244758410,
+                    +233206186879,
+                    +23324354730,
+                    +233204345246`,
                     subtitle: "24/7 Member Support",
                     gradient: "from-blue-500 to-cyan-600",
                   },
                   {
                     icon: <Mail className="w-8 h-8" />,
                     title: "Email Us",
-                    description: "info@goodnewscu.org",
+                    description: "goodnewscooperativecreditunion2009@gmail.com",
                     subtitle: "Quick Response Guaranteed",
                     gradient: "from-purple-500 to-pink-600",
                   },
@@ -1389,7 +1394,7 @@ export default function CreditUnionWebsite() {
                     <h3 className={`font-bold ${isDarkMode ? "text-white" : "text-gray-900"} text-xl mb-3`}>
                       {contact.title}
                     </h3>
-                    <p className={`${isDarkMode ? "text-gray-300" : "text-gray-600"} text-lg mb-2`}>
+                    <p className={`${isDarkMode ? "text-gray-300" : "text-gray-600"} text-[12px]`}>
                       {contact.description}
                     </p>
                     <p className={`text-sm ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>{contact.subtitle}</p>
